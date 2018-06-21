@@ -23,9 +23,15 @@ namespace UnitConversionServerUpdate.Controllers
             return View(viewName: "gallons", model: "");
         }
 
-        public IActionResult Teaspoons()
+        public ActionResult Teaspoons()
         {
-            return View(viewName: "teaspoon", model: "");
+            return View(viewName: "Teaspoons", model: "");
+        }
+
+        public ActionResult TspConvert(double cups)
+        {
+            double tsp = cups * 48;
+            return View(viewName: "Teaspoons", model: tsp);
         }
     }
 }
