@@ -8,9 +8,14 @@ namespace UnitConversionServerUpdate.Controllers
 {
     public class ConversionController : Controller
     {
-        public IActionResult Index()
+        public ActionResult Index()
         {
-            return View();
+            return View(viewName "Index", model : "");
+        }
+
+        public ActionResult pints()
+        {
+            return View(viewName "pints", model: "");
         }
     }
 }
