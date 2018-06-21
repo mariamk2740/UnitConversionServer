@@ -12,5 +12,10 @@ namespace UnitConversionServerUpdate.Controllers
         {
             return View();
         }
+
+        public IActionResult Teaspoons()
+        {
+            return View(viewName: "teaspoon", model: "");
+        }
     }
 }
