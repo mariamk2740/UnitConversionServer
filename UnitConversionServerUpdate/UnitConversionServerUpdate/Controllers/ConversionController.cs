@@ -18,5 +18,9 @@ namespace UnitConversionServerUpdate.Controllers
             double ounces = cups * 8;
             return View(viewName: "oz", model: ounces);
         }
+        public ActionResult Gallons()
+        {
+            return View(viewName: "gallons", model: "");
+        }
     }
 }
