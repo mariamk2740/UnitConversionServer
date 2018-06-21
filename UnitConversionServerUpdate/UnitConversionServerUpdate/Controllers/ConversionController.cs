@@ -25,7 +25,13 @@ namespace UnitConversionServerUpdate.Controllers
 
         public ActionResult pints()
         {
-            return View(viewName: "pints", model: "");
+            return View(viewName: "pints", model: 0.0);
+        }
+
+        public ActionResult ctop(double cups )
+        {
+            double pints = cups / 2;
+            return View(viewName: "pints", model: pints);
         }
     }
 }
