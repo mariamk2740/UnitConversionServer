@@ -1,22 +1,13 @@
-﻿@model double
-@{
-    ViewData["Title"] = "oz";
+﻿@{
+    ViewData["Title"] = "gallons";
 }
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title>Cups to Oz</title>
-    <link href="css/bootstrap.css" rel="stylesheet" />
-</head>
-<body>
     <div id="app">
         <header id="header">
-            CUPS TO OZ
+            CUPS TO GALLONS
         </header>
         <hr id="top-line" />
         <div class="row">
-            <form action="OzConvert" method="post">
+            <form action="GallonsConvert" method="post">
                 <div class="offset-md-1 col-md-2">
 
                     <input id="cupsInput" name="cups" type="number" step="any" />
@@ -28,9 +19,9 @@
                     <!-- <p id="equal">=</p> -->
                 </div>
                 <div class="col-md-2">
-                    <!-- <input id="secondInput" v-model="oz" v-on:input="conOtoC" type="number" /> -->
+                    <!-- <input id="secondInput" v-model="gallons" v-on:input="conOtoC" type="number" /> -->
                     <p>@Model</p>
-                    <p class="cups">OUNCES</p>
+                    <p class="cups">GALLONS</p>
                 </div>
             </form>
         </div>
@@ -43,5 +34,5 @@
         <hr id="bottom-line" />
         <a href="index.html">Home</a>
     </div>
-</body>
-</html>
+
+

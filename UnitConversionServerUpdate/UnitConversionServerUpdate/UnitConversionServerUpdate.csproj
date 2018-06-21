@@ -13,9 +13,18 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
   </ItemGroup>
 
+    <None Include="wwwroot\css\indexStyle.css" />
+    <None Include="wwwroot\images\cups.png" />
+  <ItemGroup>
+  </ItemGroup>
+    <None Include="wwwroot\css\StyleSheet1.css" />
+</Project>
+
   <ItemGroup>
     <None Include="wwwroot\css\indexStyle.css" />
     <None Include="wwwroot\images\cups.png" />
   </ItemGroup>
 
-</Project>
+  <ItemGroup>
+    <None Include="wwwroot\css\StyleSheet1.css" />
+  </ItemGroup>
