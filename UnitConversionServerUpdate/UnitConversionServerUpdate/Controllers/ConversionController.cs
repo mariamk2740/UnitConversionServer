@@ -8,9 +8,19 @@ namespace UnitConversionServerUpdate.Controllers
 {
     public class ConversionController : Controller
     {
-        public ActionResult Index()
+        public ActionResult oz()
         {
-            return View(viewName:  "Index", model : "");
+            return View(viewName:"oz", model: 0.0);
+        }
+
+        public ActionResult OzConvert(double cups)
+        {
+            double ounces = cups * 8;
+            return View(viewName: "oz", model: ounces);
+        }
+        public ActionResult Gallons()
+        {
+            return View(viewName: "gallons", model: "");
         }
 
         public ActionResult pints()
