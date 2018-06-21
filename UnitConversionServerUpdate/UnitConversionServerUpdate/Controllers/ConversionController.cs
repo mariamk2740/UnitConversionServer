@@ -12,5 +12,9 @@ namespace UnitConversionServerUpdate.Controllers
         {
             return View();
         }
+        public ActionResult Gallons()
+        {
+            return View(viewName: "gallons", model: "");
+        }
     }
 }
