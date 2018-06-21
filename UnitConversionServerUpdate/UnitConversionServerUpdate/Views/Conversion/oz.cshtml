@@ -16,22 +16,23 @@
         </header>
         <hr id="top-line" />
         <div class="row">
-            <div class="offset-md-1 col-md-2">
-                <form action="OzConvert" method="post">
-                    <!-- <input id="cupsInput" v-model="cups" v-on:input="conCtoO" type="number" /> -->
-                    <input id="cupsInput" name="cups" type="number" step="any"/>
-                    <input name="submit" type="submit"/>
-                </form>
-                <p class="cups">CUPS</p>
-            </div>
-            <div class="col-md-4">
-                <p id="equal">=</p>
-            </div>
-            <div class="col-md-2">
-                <!-- <input id="secondInput" v-model="oz" v-on:input="conOtoC" type="number" /> -->
-                <p>@Model</p>
-                <p class="cups">OUNCES</p>
-            </div>
+            <form action="OzConvert" method="post">
+                <div class="offset-md-1 col-md-2">
+
+                    <input id="cupsInput" name="cups" type="number" step="any" />
+
+                    <p class="cups">CUPS</p>
+                </div>
+                <div class="col-md-4">
+                    <button id="equal" type="submit">=</button>
+                    <!-- <p id="equal">=</p> -->
+                </div>
+                <div class="col-md-2">
+                    <!-- <input id="secondInput" v-model="oz" v-on:input="conOtoC" type="number" /> -->
+                    <p>@Model</p>
+                    <p class="cups">OUNCES</p>
+                </div>
+            </form>
         </div>
         <div class="row">
             <div class="col-md-4">
