@@ -49,6 +49,8 @@
     vertical-align: middle;
     transform: translateY(-80px);
     font-weight: bold;
+    background-color: transparent;
+    border-color: transparent;
     color: #66a7a7;
 }
 

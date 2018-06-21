@@ -8,14 +8,22 @@ namespace UnitConversionServerUpdate.Controllers
 {
     public class ConversionController : Controller
     {
-        public ActionResult Tablespoons()
-        {
-            return View(viewName: "Tablespoons", model: " ");
-        }
         public IActionResult Index()
         {
             return View();
         }
+
+        public ActionResult Tablespoons()
+        {
+            return View(viewName: "Tablespoons", model: 0.0);
+        }
+
+        public ActionResult CupstoTBSP(double cups)
+        {
+            double tbsp = cups * 16;
+            return View(viewName: "Tablespoons", model: tbsp);
+        }
+       
         public ActionResult Gallons()
         {
             return View(viewName: "gallons", model: "");
