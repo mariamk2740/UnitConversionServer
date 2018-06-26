@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "gallons";
+}
+    <div id="app">
+        <header id="header">
+            CUPS TO GALLONS
+        </header>
+        <hr id="top-line" />
+        <div class="row">
+            <form action="GallonsConvert" method="post">
+                <div class="offset-md-1 col-md-2">
+
+                    <input id="cupsInput" name="cups" type="number" step="any" />
+
+                    <p class="cups">CUPS</p>
+                </div>
+                <div class="col-md-4">
+                    <button id="equal" type="submit" style="height: 100px; width: 100px;">=</button>
+                    <!-- <p id="equal">=</p> -->
+                </div>
+                <div class="col-md-2">
+                    <!-- <input id="secondInput" v-model="gallons" v-on:input="conOtoC" type="number" /> -->
+                    <p>@Model</p>
+                    <p class="cups">GALLONS</p>
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-5">
+            </div>
+        </div>
+        <hr id="bottom-line" />
+        <a href="index.html">Home</a>
+    </div>
+
+

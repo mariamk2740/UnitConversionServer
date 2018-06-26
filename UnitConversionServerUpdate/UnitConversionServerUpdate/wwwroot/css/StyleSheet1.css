@@ -1,0 +1,62 @@
+﻿#header {
+    background-color: #a72057;
+    text-align: center;
+    color: white;
+    font-size: 95px;
+    margin: 30px;
+    vertical-align: middle;
+}
+
+#top-line {
+    margin-top: 130px;
+    margin-bottom: 60px;
+    width: 75%;
+}
+
+#cupsInput {
+    width: 300px;
+    height: 100px;
+    margin-left: 50%;
+    font-size: 60px;
+    border-width: 3px;
+    border-color: black;
+}
+
+#secondInput {
+    width: 300px;
+    height: 100px;
+    font-size: 60px;
+    margin-left: 300px;
+    border: 3px solid;
+    border-color: black;
+}
+
+#bottom-line {
+    margin-top: 0px;
+    width: 75%;
+}
+
+.cups {
+    font-size: 35px;
+    margin-left: 200px
+}
+
+
+#equal {
+   height: 50px;
+   width: 50px;
+   margin-left: 325px;
+   margin-top: -20px;
+   font-size: 100px;
+   background-color: transparent;
+   border-color: transparent;
+}
+
+.units {
+    font-size: 35px;
+    margin-left: 55px;
+}
+
+.col-md-2{
+    margin-left: 100px;
+}
