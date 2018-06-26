@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewData["Title"] = "Teaspoons";
+}
+
+<div id="app">
+    <header id="header">
+        CUPS TO TEASPOONS
+    </header>
+    <hr id="top-line" />
+    <div class="row">
+        <form action="TspConvert" method="post">
+            <div class="offset-md-1 col-md-2">
+                <input id="cupsInput" name="cups" type="number" step="any" />
+                <p class="cups">CUPS</p>
+            </div>
+            <div class="col-md-4">
+                <button id="equal" type="submit">=</button>
+            </div>
+            <div class="col-md-2">
+                <p>@Model</p>
+                <p class="cups"> TEASPOONS</p>
+            </div>
+        </form>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-5">
+        </div>
+    </div>
+    <hr id="bottom-line" />
+    <a href="index.html">Home</a>
+</div>
