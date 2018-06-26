@@ -39,5 +39,19 @@ namespace UnitConversionServerUpdate.Controllers
             double gallons = cups * 0.0625;
             return View(viewName: "gallons", model: gallons);
         }
+
+        public ActionResult pints()
+        {
+            return View(viewName: "pints", model: 0.0);
+        }
+
+        public ActionResult ctop(double cups )
+        {
+            double pints = cups / 2;
+            return View(viewName: "pints", model: pints);
+        }
     }
 }
+
+
+
