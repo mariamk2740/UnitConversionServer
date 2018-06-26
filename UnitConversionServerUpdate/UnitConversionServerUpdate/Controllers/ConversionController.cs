@@ -38,5 +38,19 @@ namespace UnitConversionServerUpdate.Controllers
             double tsp = cups * 48;
             return View(viewName: "Teaspoons", model: tsp);
         }
+
+        public ActionResult pints()
+        {
+            return View(viewName: "pints", model: 0.0);
+        }
+
+        public ActionResult ctop(double cups )
+        {
+            double pints = cups / 2;
+            return View(viewName: "pints", model: pints);
+        }
     }
 }
+
+
+
