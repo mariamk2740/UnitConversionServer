@@ -8,6 +8,12 @@ namespace UnitConversionServerUpdate.Controllers
 {
     public class ConversionController : Controller
     {
+
+        public IActionResult Index()
+        {
+            return View();
+        }
+
         public ActionResult oz()
         {
             return View(viewName:"oz", model: 0.0);

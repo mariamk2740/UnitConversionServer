@@ -14,6 +14,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\css\indexStyle.css" />
+    <None Include="wwwroot\images\cups.png" />
     <None Include="wwwroot\css\StyleSheet1.css" />
   </ItemGroup>
 
