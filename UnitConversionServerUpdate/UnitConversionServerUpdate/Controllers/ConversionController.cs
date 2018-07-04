@@ -8,6 +8,12 @@ namespace UnitConversionServerUpdate.Controllers
 {
     public class ConversionController : Controller
     {
+
+        public IActionResult Index()
+        {
+            return View();
+        }
+
         public ActionResult oz()
         {
             return View(viewName:"oz", model: 0.0);
@@ -38,11 +44,6 @@ namespace UnitConversionServerUpdate.Controllers
         {
             double gallons = cups * 0.0625;
             return View(viewName: "gallons", model: gallons);
-        }
-
-        public IActionResult Index()
-        {
-            return View();
         }
 
         public ActionResult Teaspoons()
