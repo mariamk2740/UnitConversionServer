@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -38,11 +38,6 @@ namespace UnitConversionServerUpdate.Controllers
         {
             double gallons = cups * 0.0625;
             return View(viewName: "gallons", model: gallons);
-        }
-
-        public IActionResult Index()
-        {
-            return View();
         }
 
         public ActionResult Teaspoons()
