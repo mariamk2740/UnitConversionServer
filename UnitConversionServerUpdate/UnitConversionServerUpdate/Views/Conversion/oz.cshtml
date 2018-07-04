@@ -1,0 +1,47 @@
+﻿@model double
+@{
+    ViewData["Title"] = "oz";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Cups to Oz</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="app">
+        <header id="header">
+            CUPS TO OZ
+        </header>
+        <hr id="top-line" />
+        <div class="row">
+            <form action="OzConvert" method="post">
+                <div class="offset-md-1 col-md-2">
+
+                    <input id="cupsInput" name="cups" type="number" step="any" />
+
+                    <p class="cups">CUPS</p>
+                </div>
+                <div class="col-md-4">
+                    <button id="equal" type="submit">=</button>
+                    <!-- <p id="equal">=</p> -->
+                </div>
+                <div class="col-md-2">
+                    <!-- <input id="secondInput" v-model="oz" v-on:input="conOtoC" type="number" /> -->
+                    <p>@Model</p>
+                    <p class="cups">OUNCES</p>
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-5">
+            </div>
+        </div>
+        <hr id="bottom-line" />
+        <a href="index.html">Home</a>
+    </div>
+</body>
+</html>
